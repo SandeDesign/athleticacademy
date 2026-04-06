@@ -231,7 +231,6 @@ const HeroEditor = ({
         Zonder afbeelding wordt een kleurverloop gebruikt.
       </p>
       <ImageUpload
-        path="content/hero"
         value={data.achtergrondUrl || ''}
         onChange={(url) => onChange('achtergrondUrl', url)}
       />
@@ -289,7 +288,6 @@ const AboutEditor = ({
           Afbeelding
         </label>
         <ImageUpload
-          path="content/about"
           value={data.afbeeldingUrl || ''}
           onChange={(url) => onChange('afbeeldingUrl', url)}
         />
